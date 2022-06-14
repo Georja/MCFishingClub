@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Home Page-Marsden Cove Fishing Club</title>
+<title>About Us-Marsden Cove Fishing Club</title>
     <style>
     /*  SECTIONS  */
 .section {
@@ -53,7 +53,7 @@
 </head>
 <body>
 
-<h1>Marsden Cove Fishing Club</h1>
+<h1>Marsden Cove Fishing Club-About Us</h1>
 <header class="section group">
 	<div class="col span_1_of_3">
 	<p><a href="index.php">Home</a>   <a href="aboutus.php">About Us</a>    JOIN US   GALLERY   EVENTS </p>
