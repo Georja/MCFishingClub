@@ -49,39 +49,70 @@
 	.col { margin: 1% 0 1% 0%;}
 	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
 }
+        body {
+  background-image: url('Images/captured-marlin-large.JPG');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+        a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #DBBD5C;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #DBBD5C;
+  background-color: transparent;
+  text-decoration: underline;
+}
+h1 {
+            
+    font-size:60px;
+    color:#DBBD5C; 
+    text-align: center;
+}
     </style>
+   
 </head>
-<body>
 
-<h1>Marsden Cove Fishing Club</h1>
+    
+   
 <header class="section group">
-	<div class="col span_1_of_3">
-	<p><a href="index.php">Home</a>   <a href="aboutus.php">About Us</a>    JOIN US   GALLERY   EVENTS </p>
-	</div>
-	<div class="col span_1_of_3">
-	<img src="images/mcfc-logo.jpg" alt="mcfc-logo">
-
-	</div>
-	<div class="col span_1_of_3">
-	<p>LEADER BOARDS    WEIGH MASTERS  SPONSORS   SAFETY   CONTACT                                                            FB</p>
-	</div>
-</header>
-    <div class="col span_1_of_3">
-	<p>ABOUT US</p>
-	</div>
-<div class="section group">
-	<div class="col span_1_of_3">
-    <img src="images/marlin-weighing-thin.jpg" alt="weighedmarlin-thin">
-    </div>
 	
-	<div class="col span_2_of_3">
-         <p>Marsden Cove Fishing Club is located at the Marsden Cove Marina (next to Land and Sea Café) and overlooks the marina with prime viewing of the boat ramp — which can provide some entertainment on the odd occasion.
-</p>
-<p>Members, both local and from further afield have created a strong sense of community within the club. It’s a great place to bring the family, meet up with your friends, tell those great fishing stories, and compete for the annual angler of year prize.</p>
+    <div class="col span_1_of_3">
+	<p>
 
-<p>To become a member, pop into the club on a Thursday, Friday or Saturday night and fill out a membership form, or complete the online registration form.</p>
+        <a href="home.php">HOME</a>   <a href="aboutus.php">ABOUT US</a>  <a href="joinus.php">JOIN US</a>  <a href="gallery.php">GALLERY</a> <a href="events.php">EVENTS</a></p>
+	</div>
+	<div class="col span_1_of_3">
+	   <img src="images/mcfc-logo.jpg" alt="mcfc-logo" style="width:150px;height:150px;">
 
 	</div>
+	<div class="col span_1_of_3">
+	   <p>LEADER BOARDS    WEIGH MASTERS  SPONSORS   SAFETY   CONTACT                                                            FB</p>
+	</div>
+   
+</header> 
+<div class="section group">
+	<div class="col span_3_of_3">
+        <h1>WELCOME TO <br> THE MARSDEN COVE FISHING CLUB<br>JOIN US </h1> 
+      
+        
+    </div>
+</div>
+	
     <div class="col span_2_of_3">
 	<p>BUSINESS WALL SIGN</p>
 </div>
