@@ -54,7 +54,7 @@
 }
 
 .span_4_of_9 {
-  	width: 43.77%;
+  	width: 42%;
 }
 
 .span_3_of_9 {
@@ -75,20 +75,45 @@
 	.span_1_of_9, .span_2_of_9, .span_3_of_9, .span_4_of_9, .span_5_of_9, .span_6_of_9, .span_7_of_9, .span_8_of_9, .span_9_of_9 { width: 100%; }
 }
         
-        body {
-  background-image: url('Images/captured-marlin-large.JPG');
-  background-repeat: no-repeat;
-  background-size: 100% 40%;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3399ff60;
 }
-        body {
-  background-color: black
+
+li {
+  float: left;
 }
-        a:link {
+
+li a {
+  display: block;
   color: white;
-  background-color: transparent;
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: 700;
+  text-align: center;
+  padding: 20px 16px;
   text-decoration: none;
 }
 
+li a:hover {
+  background-color: #2399ff60;
+}
+        
+body {
+  background-image: url('Images/captured-marlin-large.JPG');
+  background-repeat: no-repeat;
+  background-size: 100% 40%;
+  background-color: black
+}
+     
+a:link {
+  color: #DBBD5C;
+  background-color: transparent;
+  text-decoration: none;
+}
 a:visited {
   color: #DBBD5C;
   background-color: transparent;
@@ -111,6 +136,7 @@ h1 {
     font-size:60px;
     color:#DBBD5C; 
     text-align: center;
+    font-stretch: condensed;
 }
 h2 {
     
@@ -118,28 +144,35 @@ h2 {
     color:white;
     text-align:center;
 }
-        p {
+p {
     font-size:20px;
     color:white;
     text-align:left;
         }
-    </style>
+</style>
    
 </head>
-
+<body>
     
    
 <div class="section group">
 	
     <div class="col span_4_of_9">
-	<p> <a href="index.php">HOME</a>   <a href="aboutus.php">ABOUT US</a>  <a href="joinus.php">JOIN US</a>  <a href="gallery.php">GALLERY</a> <a href="events.php">EVENTS</a></p>
+    <ul>
+     <li><a class="active" href="index.php">HOME</a></li>
+     <li><a href="aboutus.php">ABOUT US</a></li>
+     <li><a href="joinus.php">JOIN US</a></li>
+     <li><a href="gallery.php">GALLERY</a></li>
+     <li><a href="events.php">EVENTS</a></li>
+    </ul>
 	</div>
+    
 	<div class="col span_1_of_9">
-	   <img src="images/mcfc-logo-sm.jpg" alt="mcfc-logo" style="width:150px;height:150px;">
+	   <img src="images/mcfc-logo-sm.jpg" alt="mcfc-logo" style="width:150px;">
 
 	</div>
 	<div class="col span_4_of_9">
-	   <p>LEADER BOARDS WEIGH MASTERS SPONSORS SAFETY CONTACT FB</p>
+	   <p>LEADERBOARDS WEIGHMASTERS SPONSORS SAFETY CONTACT FB</p>
 	</div>
    
 </div> 
