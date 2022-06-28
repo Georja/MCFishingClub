@@ -3,6 +3,12 @@
 <head>
 <title>Home Page-Marsden Cove Fishing Club</title>
     <style>
+        body {
+  background-image: url('Images/captured-marlin-large.JPG');
+  background-repeat: no-repeat;
+  background-size: 100% 40%;
+  background-color: black
+}
     /*  SECTIONS  */
 .section {
 	clear: both;
@@ -75,6 +81,7 @@
 	.span_1_of_9, .span_2_of_9, .span_3_of_9, .span_4_of_9, .span_5_of_9, .span_6_of_9, .span_7_of_9, .span_8_of_9, .span_9_of_9 { width: 100%; }
 }
         
+        
 ul {
   list-style-type: none;
   margin: 0;
@@ -101,21 +108,14 @@ li a {
 li a:hover {
   background-color: #2399ff60;
 }
-        
-body {
-  background-image: url('Images/captured-marlin-large.JPG');
-  background-repeat: no-repeat;
-  background-size: 100% 40%;
-  background-color: black
-}
      
 a:link {
-  color: #DBBD5C;
+  color: #000;
   background-color: transparent;
   text-decoration: none;
 }
 a:visited {
-  color: #DBBD5C;
+  color: #000;
   background-color: transparent;
   text-decoration: none;
 }
@@ -131,24 +131,39 @@ a:active {
   background-color: transparent;
   text-decoration: underline;
 }
+        
+ p {
+    font-size:20px;
+    color:white;
+    text-align:left;
+        }             
 h1 {
-            
+    
     font-size:60px;
-    color:#DBBD5C; 
+    color:black; 
     text-align: center;
-    font-stretch: condensed;
 }
+        
 h2 {
     
     font-size:40px;
     color:white;
     text-align:center;
 }
-p {
-    font-size:20px;
-    color:white;
-    text-align:left;
-        }
+        
+.element{ text-shadow: 
+    -1px -1px 0 #DBBD5C,
+    1px -1px 0 #DBBD5C,
+    -1px 1px 0 #DBBD5C,
+    1px 1px 0 #DBBD5C;
+}
+
+a{ text-shadow: 
+    -1px -1px 0 #DBBD5C,
+    1px -1px 0 #DBBD5C,
+    -1px 1px 0 #DBBD5C,
+    1px 1px 0 #DBBD5C;
+}
 </style>
    
 </head>
@@ -180,7 +195,7 @@ p {
 <div class="section group">
     
 	<div class="col span_9_of_9">
-        <h1>WELCOME TO THE <br> MARSDEN COVE FISHING CLUB<br>JOIN US TODAY</h1> 
+        <h1 class="element">WELCOME TO THE <br> MARSDEN COVE FISHING CLUB<br>JOIN US TODAY</h1> 
       
         
     </div>
