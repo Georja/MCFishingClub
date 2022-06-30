@@ -2,195 +2,19 @@
 <html>
 <head>
 <title>Home Page-Marsden Cove Fishing Club</title>
-    <style>
-        body {
+
+    <link rel="stylesheet" href="css/style.css">
+<style>
+          body {
   background-image: url('Images/captured-marlin-large.JPG');
   background-repeat: no-repeat;
   background-size: 100% 40%;
-  background-color: black
 }
-    /*  SECTIONS  */
-.section {
-	clear: both;
-	padding: 0px;
-	margin: 0px;
-}
-
-/*  COLUMN SETUP  */
-.col {
-	display: block;
-	float:left;
-	margin: 1% 0 1% 1.6%;
-}
-.col:first-child { margin-left: 0; }
-
-
-/*  GROUPING  */
-.group:before,
-.group:after {
-	content:"";
-	display:table;
-}
-.group:after {
-	clear:both;
-}
-.group {
-    zoom:1; /* For IE 6/7 */
-}
-
-        /*  GRID OF NINE  */
-.span_9_of_9 {
-	width: 100%;
-}
-
-.span_8_of_9 {
-  	width: 88.75%;
-}
-
-.span_7_of_9 {
-  	width: 77.51%;
-}
-
-.span_6_of_9 {
-  	width: 66.26%;
-}
-
-.span_5_of_9 {
-  	width: 55.02%;
-}
-
-.span_4_of_9 {
-  	width: 42%;
-}
-
-.span_3_of_9 {
-  	width: 32.53%;
-}
-
-.span_2_of_9 {
-  	width: 21.28%;
-}
-
-.span_1_of_9 {
-  	width: 10.04%;
-}
-
-/*  GO FULL WIDTH BELOW 480 PIXELS */
-@media only screen and (max-width: 600px) {
-	.col {  margin: 1% 0 1% 0%; }
-	.span_1_of_9, .span_2_of_9, .span_3_of_9, .span_4_of_9, .span_5_of_9, .span_6_of_9, .span_7_of_9, .span_8_of_9, .span_9_of_9 { width: 100%; }
-}
-        
-        
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #3399ff60;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  font-size: 15px;
-  font-family: sans-serif;
-  font-weight: 700;
-  text-align: center;
-  padding: 20px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #2399ff60;
-}
-     
-a:link {
-  color: #000;
-  background-color: transparent;
-  text-decoration: none;
-}
-a:visited {
-  color: #000;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:hover {
-  color: white;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-a:active {
-  color: #DBBD5C;
-  background-color: transparent;
-  text-decoration: underline;
-}
-        
- p {
-    font-size:20px;
-    color:white;
-    text-align:left;
-        }             
-h1 {
-    
-    font-size:60px;
-    color:black; 
-    text-align: center;
-}
-        
-h2 {
-    
-    font-size:40px;
-    color:white;
-    text-align:center;
-}
-        
-.element{ text-shadow: 
-    -1px -1px 0 #DBBD5C,
-    1px -1px 0 #DBBD5C,
-    -1px 1px 0 #DBBD5C,
-    1px 1px 0 #DBBD5C;
-}
-
-a{ text-shadow: 
-    -1px -1px 0 #DBBD5C,
-    1px -1px 0 #DBBD5C,
-    -1px 1px 0 #DBBD5C,
-    1px 1px 0 #DBBD5C;
-}
-</style>
-   
+    </style>
 </head>
 <body>
     
-   
-<div class="section group">
-	
-    <div class="col span_4_of_9">
-    <ul>
-     <li><a class="active" href="index.php">HOME</a></li>
-     <li><a href="aboutus.php">ABOUT US</a></li>
-     <li><a href="joinus.php">JOIN US</a></li>
-     <li><a href="gallery.php">GALLERY</a></li>
-     <li><a href="events.php">EVENTS</a></li>
-    </ul>
-	</div>
-    
-	<div class="col span_1_of_9">
-	   <img src="images/mcfc-logo-sm.jpg" alt="mcfc-logo" style="width:150px;">
-
-	</div>
-	<div class="col span_4_of_9">
-	   <p>LEADERBOARDS WEIGHMASTERS SPONSORS SAFETY CONTACT FB</p>
-	</div>
-   
-</div> 
+   <?php include('header.php');?>
     
 <div class="section group">
     
@@ -243,8 +67,8 @@ a{ text-shadow:
 
 </div>
     
-<footer>
 
-</footer>
+<?php include('footer.php');?>
+
 </body>
 </html>

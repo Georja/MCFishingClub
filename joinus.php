@@ -2,70 +2,12 @@
 <html>
 <head>
 <title>About Us-Marsden Cove Fishing Club</title>
-    <style>
-    /*  SECTIONS  */
-.section {
-	clear: both;
-	padding: 0px;
-	margin: 0px;
-}
-
-/*  COLUMN SETUP  */
-.col {
-	display: block;
-	float:left;
-	margin: 1% 0 1% 1.6%;
-}
-.col:first-child { margin-left: 0; }
-
-
-/*  GROUPING  */
-.group:before,
-.group:after {
-	content:"";
-	display:table;
-}
-.group:after {
-	clear:both;
-}
-.group {
-    zoom:1; /* For IE 6/7 */
-}
-
-/*  GRID OF THREE  */
-.span_3_of_3 {
-	width: 100%;
-}
-.span_2_of_3 {
-	width: 66.1%;
-}
-.span_1_of_3 {
-	width: 32.2%;
-}
-
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-
-@media only screen and (max-width: 600px) {
-	.col { margin: 1% 0 1% 0%;}
-	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
-}
-    </style>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<h1>Marsden Cove Fishing Club-About Us</h1>
-<header class="section group">
-	<div class="col span_1_of_3">
-	<p><a href="home.php">Home</a>   <a href="aboutus.php">About Us</a>    JOIN US   GALLERY   EVENTS </p>
-	</div>
-	<div class="col span_1_of_3">
-	<img src="images/mcfc-logo.jpg" alt="mcfc-logo">
-
-	</div>
-	<div class="col span_1_of_3">
-	<p>LEADER BOARDS    WEIGH MASTERS  SPONSORS   SAFETY   CONTACT                                                            FB</p>
-	</div>
-</header>
+<?php include('header.php');?>
+    
     <div class="col span_1_of_3">
 	<p>ABOUT US</p>
 	</div>
