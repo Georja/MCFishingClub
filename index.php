@@ -54,7 +54,7 @@
 <div class="section group">
     
     <div class="col span_9_of_9">
-      <h2> CHECK OUT OUR AMAZING SPONSERS <br> ON OUR SPONSERSHIP PAGE</h2>
+      <h2> CHECK OUT OUR AMAZING SPONSORS <br> ON OUR SPONSORSHIP PAGE</h2>
     </div>
 
 </div>

@@ -4,17 +4,23 @@
 <title>About Us-Marsden Cove Fishing Club</title>
 <link rel="stylesheet" href="css/style.css">
    
+<style>
+          body {
+  background-image: url('Images/whangarei-heads.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 20%;
+}
+</style>
 </head>
 <body>
-<?php include('header.php');
-    ?>
+<?php include('header.php');?>
     
 <div class="section group">
     
 	<div class="col span_9_of_9">
-        <h1>ABOUT US</h1>      
+        <h1 class="element">ABOUT US</h1> 
+          
     </div>
-
 </div>
     
     
@@ -45,9 +51,8 @@
     </div>
 
 </div>
-    
-<footer>
 
-</footer>
+<?php include('footer.php');?>
+    
 </body>
 </html>
