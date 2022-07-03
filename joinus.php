@@ -3,27 +3,39 @@
 <head>
 <title>About Us-Marsden Cove Fishing Club</title>
 <link rel="stylesheet" href="css/style.css">
+   
+<style>
+  body {
+  background-image: url('Images/whangarei-heads-improv.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 15%;
+}
+</style>
 </head>
 <body>
 
-<?php include('header.php');?>
-    
-    <div class="col span_1_of_3">
-	<p>ABOUT US</p>
-	</div>
+   <?php include('header.php');?>
+
 <div class="section group">
-	<div class="col span_1_of_3">
-    <img src="images/marlin-weighing-thin.jpg" alt="weighedmarlin-thin">
+    
+	<div class="col span_9_of_9">
+        <h1 class="element">JOIN US</h1> 
+          
     </div>
-	
-	<div class="col span_2_of_3">
-         <p>Marsden Cove Fishing Club is located at the Marsden Cove Marina (next to Land and Sea Café) and overlooks the marina with prime viewing of the boat ramp — which can provide some entertainment on the odd occasion.
-</p>
-<p>Members, both local and from further afield have created a strong sense of community within the club. It’s a great place to bring the family, meet up with your friends, tell those great fishing stories, and compete for the annual angler of year prize.</p>
-
-<p>To become a member, pop into the club on a Thursday, Friday or Saturday night and fill out a membership form, or complete the online registration form.</p>
-
-	</div>
+</div>
+    
+<div class="section group">
+    
+    <div class="col span_3_of_9">
+     <img src="images/marlin-weigh-improv.JPG" alt="marlin-weigh" style="width:347px;height:540px;">  
+    </div>
+        
+    <div class="col span_3_of_9">
+        <p>Membership: <br> <br> We welcome new members to our friendly club. <br> Current memberships expire and are up for renewal from... <br> <br> Payment Options: <br> <br> Sign up at the Marsden Cove Fishing Club Room (next to Land and Sea Café) - open Thursday, Friday and Saturday from 4.30pm. <br> <br> Complete the membership form and pay by internet banking or Marsden Cove Fishing Club Room (open Thursday, Friday and Saturday from 4.30pm). Bring your completed membership form with you if paying at the club.</p>
+    </div>
+        
+</div> 
+    
     <div class="col span_2_of_3">
 	<p>BUSINESS WALL SIGN</p>
 </div>

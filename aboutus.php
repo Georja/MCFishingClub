@@ -5,15 +5,16 @@
 <link rel="stylesheet" href="css/style.css">
    
 <style>
-          body {
-  background-image: url('Images/whangarei-heads.jpg');
+  body {
+  background-image: url('Images/whangarei-heads-improv.jpg');
   background-repeat: no-repeat;
-  background-size: 100% 20%;
+  background-size: 100% 15%;
 }
 </style>
 </head>
 <body>
-<?php include('header.php');?>
+
+   <?php include('header.php');?>
     
 <div class="section group">
     
@@ -22,12 +23,11 @@
           
     </div>
 </div>
-    
-    
+      
 <div class="section group">
     
     <div class="col span_3_of_9">
-     <img src="images/the-heads.jpg" alt="the-heads" style="width:347px;height:540px;">  
+     <img src="images/the-heads-improv.PNG" alt="the-heads" style="width:347px;height:540px;">  
     </div>
         
     <div class="col span_3_of_9">
@@ -55,4 +55,4 @@
 <?php include('footer.php');?>
     
 </body>
-</html>
+</htm

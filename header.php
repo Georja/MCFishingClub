@@ -1,3 +1,4 @@
+<header>
 <div class="section group">
 	
     <div class="col span_4_of_9">
@@ -27,3 +28,4 @@
 	</div>
    
 </div>
+</header>

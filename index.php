@@ -2,15 +2,15 @@
 <html>
 <head>
 <title>Home Page-Marsden Cove Fishing Club</title>
-
-    <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css">
+    
 <style>
-          body {
+  body {
   background-image: url('Images/captured-marlin-large.JPG');
   background-repeat: no-repeat;
-  background-size: 100% 40%;
+  background-size: 100% 30%;
 }
-    </style>
+</style>
 </head>
 <body>
     
@@ -21,11 +21,30 @@
 	<div class="col span_9_of_9">
         <h1 class="element">WELCOME TO THE <br> MARSDEN COVE FISHING CLUB<br>JOIN US TODAY</h1> 
       
+    </div>
+</div>
+
+<div class="section group">
+    
+    <div class="col span_9_of_9">
         
     </div>
 </div>
 
-        
+<div class="section group">
+    
+    <div class="col span_9_of_9">
+       
+    </div>
+</div>
+
+<div class="section group">
+    
+    <div class="col span_9_of_9">
+       
+    </div>
+</div>
+    
 <div class="section group">
     
     <div class="col span_9_of_9">
@@ -37,7 +56,7 @@
 <div class="section group">
     
     <div class="col span_3_of_9">
-     <img src="images/the-heads.jpg" alt="the-heads" style="width:347px;height:540px;">  
+     <img src="images/the-heads-improv.PNG" alt="the-heads" style="width:347px;height:540px;">  
     </div>
     
     <div class="col span_3_of_9">
