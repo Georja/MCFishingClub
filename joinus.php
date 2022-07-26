@@ -31,30 +31,17 @@
     </div>
         
     <div class="col span_3_of_9">
-        <p>Membership: <br> <br> We welcome new members to our friendly club. <br> Current memberships expire and are up for renewal from... <br> <br> Payment Options: <br> <br> Sign up at the Marsden Cove Fishing Club Room (next to Land and Sea Café) - open Thursday, Friday and Saturday from 4.30pm. <br> <br> Complete the membership form and pay by internet banking or Marsden Cove Fishing Club Room (open Thursday, Friday and Saturday from 4.30pm). Bring your completed membership form with you if paying at the club.</p>
+        <p>Membership: <br> We welcome new members to our friendly club. <br> Current memberships expire and are up for renewal from... <br> <br> Payment Options: <br> Sign up at the Marsden Cove Fishing Club Room (next to Land and Sea Café) - open Thursday, Friday and Saturday from 4.30pm. <br> <br> Complete the membership form and pay by internet banking or Marsden Cove Fishing Club Room (open Thursday, Friday and Saturday from 4.30pm). Bring your completed membership form with you if paying at the club. <br> <br> Membership Application Form <br> (....) </p>
     </div>
         
 </div> 
-    
-    <div class="col span_2_of_3">
-	<p>BUSINESS WALL SIGN</p>
-</div>
-    <div class="col span_2_of_3">
-        <p>For a minimal annual fee of $150.00 +gst  you will have your company sign and logo displayed on the club wall.
-
-Sponsorship renewal annual fee is $130.00 +gst (if we already have your company logo wall plaque)
-
-Contact the club secretary for more details.</p>
         
-        <div class="col span_2_of_3">
- <p>CLUB COMITTEE</p>
- <P>Current committee members details.</P>
-</div>
 <footer class="section group">
+    
 	<div class="col span_3_of_3">
-	Footer
+	<?php include('footer.php');?>
+        
 	</div>
-	
 </footer>
 
 </body>
