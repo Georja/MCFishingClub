@@ -23,7 +23,18 @@
     
 	<div class="col span_9_of_9">
         <h1 class="element">COMMITTEE</h1> 
-    <?php include('setup.php');
+    
+    </div>
+</div>
+      
+<div class="section group">
+    
+   <div class="col span_9_of_9">
+        <p>A Massive Thank You To The 2021/2022 Committee For All Their Hard Work!</p>
+    </div>
+</div>   
+
+<?php include('setup.php');
     
     
 $sql = "SELECT surname, firstname FROM `members` order by surname, firstname;";
@@ -39,18 +50,6 @@ if ($result->num_rows > 0) {
 }
 $conn->close();
 ?>       
-    </div>
-</div>
-      
-<div class="section group">
-    
-   <div class="col span_9_of_9">
-        <p>A Massive Thank You To The 2021/2022 Committee For All Their Hard Work!</p>
-    </div>
-</div>   
-
-
-    
 
     
 <?php include('footer.php');?>
