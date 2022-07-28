@@ -10,6 +10,29 @@
   background-repeat: no-repeat;
   background-size: 100% 35%;
 }
+#members {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#members td, #members th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  background-color: #f2f2f2;
+}
+
+/* #members tr:nth-child(even){background-color: #f2f2f2;}
+
+#members tr:hover {background-color: #ddd;} */
+
+#members th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
 </style>
 </head>
   
@@ -32,26 +55,44 @@
    <div class="col span_9_of_9">
         <p>A Massive Thank You To The 2021/2022 Committee For All Their Hard Work!</p>
     </div>
-</div>   
-
+</div> 
+    
+  <div class="section group">
+    
+   <div class="col span_2_of_9">
+       
+          </div>
+</div> 
+<div class="section group">
+    
+   <div class="col span_5_of_9">
+<table id="members">
+  <tr>
+    <th>Position</th>
+    <th>Name</th>
+    <th>Phone</th>
+  </tr>
+  
 <?php include('setup.php');
     
     
-$sql = "SELECT surname, firstname FROM `members` order by surname, firstname;";
+$sql = "SELECT surname, firstname, position, ph FROM `members`";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
-    echo "<p> - Name: " . $row["firstname"]. " " . $row["surname"]. "</p>";
+    echo "<tr> <td>" .$row["position"]."</td><td>". $row["firstname"]. " " . $row["surname"]."</td><td>".  $row["ph"]. "</td></tr>";
   }
 } else {
   echo "0 results";
 }
 $conn->close();
 ?>       
-
-    
+</table>
+       
+  </div>
+</div>  
 <?php include('footer.php');?>
     
 </body>
