@@ -8,30 +8,37 @@
   body {
   background-image: url('Images/whangarei-heads-improv.jpg');
   background-repeat: no-repeat;
-  background-size: 100% 35%;
+  background-size: 100% 20%;
 }
+#table.centre{
+    margin-left: auto;
+    margin-right: auto;
+    }
+body {text-align:center;
+}  
 #members {
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px; 
   border-collapse: collapse;
   width: 100%;
+  table-layout: fixed; 
 }
-
 #members td, #members th {
-  border: 1px solid #ddd;
+  border: 1px solid #f2f2f2;
   padding: 8px;
-  background-color: #f2f2f2;
+  background-color: transparent;
+  color: white;
 }
-
-/* #members tr:nth-child(even){background-color: #f2f2f2;}
-
-#members tr:hover {background-color: #ddd;} */
-
 #members th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #04AA6D;
-  color: white;
+  background-color: transparent;
+  color: black;
+  text-shadow:  
+    -1px -1px 0 #DBBD5C,
+    1px -1px 0 #DBBD5C,
+    -1px 1px 0 #DBBD5C,
+    1px 1px 0 #DBBD5C;
 }
 </style>
 </head>
@@ -49,24 +56,18 @@
     
     </div>
 </div>
-      
+    
 <div class="section group">
     
    <div class="col span_9_of_9">
-        <p>A Massive Thank You To The 2021/2022 Committee For All Their Hard Work!</p>
+        <h2>A Massive Thank You To The 2021/2022 Committee For All Their Hard Work!</h2>
     </div>
 </div> 
-    
-  <div class="section group">
-    
-   <div class="col span_2_of_9">
-       
-          </div>
-</div> 
+  
 <div class="section group">
     
    <div class="col span_5_of_9">
-<table id="members">
+<table class="centre" id="members">
   <tr>
     <th>Position</th>
     <th>Name</th>
