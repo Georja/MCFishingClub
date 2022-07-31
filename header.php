@@ -15,9 +15,9 @@
      <li><a href="joinus.php">JOIN US</a></li>
      <li><a href="gallery.php">GALLERY</a></li>
      <li class="dropdown">
-     <a href="events.php" class="dropbtn">EVENTS</a>
+     <a href=" " class="dropbtn">EVENTS</a>
      <div class="dropdown-content">
-      <a href=" ">METALCRAFT/AKARANA <br> <br> MARSDEN COVE MARLIN CLASSIC</a>
+      <a href="metalcraftakarana.php">METALCRAFT/AKARANA <br> <br> MARSDEN COVE MARLIN CLASSIC</a>
       <a href=" ">HOOK VS SPEAR OPEN TOURNAMENT</a>
       <a href=" ">COGAN'S CHICKS AT THE CHICKS</a>
       <a href=" ">2022 MARLIN CLASSIC RESULTS</a>
