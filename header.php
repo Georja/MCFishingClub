@@ -19,7 +19,7 @@
      <div class="dropdown-content">
       <a href="metalcraftakarana.php">METALCRAFT/AKARANA <br> <br> MARSDEN COVE MARLIN CLASSIC</a>
       <a href="hookvsspear.php">HOOK VS SPEAR OPEN TOURNAMENT</a>
-      <a href="chicksatthechicks.php">COGAN'S CHICKS AT THE CHICKS</a>
+      <a href="events.php?id=1">COGAN'S CHICKS AT THE CHICKS</a>
       <a href=" ">2022 MARLIN CLASSIC RESULTS</a>
      </div>
      </li>
