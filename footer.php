@@ -5,7 +5,7 @@
 
      <li><a href=" ">LEADERBOARDS</a></li>
      <li><a href=" ">WEIGHMASTERS</a></li>
-    <li><a href="events.php">EVENTS</a></li>
+    <li><a href="metalcraftakarana.php">EVENTS</a></li>
   
 </div>
    
