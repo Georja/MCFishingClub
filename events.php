@@ -3,17 +3,21 @@
 <head>
     <?php include('setup.php');
     
-    
-$sql = "SELECT * FROM `events`WHERE id =1";
+    //print_r($_GET);
+    $pageID= $_GET["id"];
+
+$sql = "SELECT * FROM `events`WHERE id =$pageID";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
-    echo "<tr> <td>" .$row["title"]."</td><td>". $row["image"]. " " . $row["sponsor"]."</td><td>".  "</td></tr>";
+  //echo "<tr> <td>" .$row["title"]."</td><td>". $row["image"]. " " . $row["sponsor"]."</td><td>".  "</td></tr>";
       $title=$row["title"];
       $image=$row["image"];
       $sponsor=$row["sponsor"];
+      $eventdate=$row["eventdate"];
+      $info=$row["info"];
   }
 } else {
   echo "0 results";
@@ -29,6 +33,11 @@ $conn->close();
   background-repeat: no-repeat;
   background-size: 100% 12%;
 }
+.aligncenter {
+    text-align: center;
+}
+
+    
 </style>
 </head>
 <body>
@@ -38,8 +47,8 @@ $conn->close();
 <div class="section group">
     
 	<div class="col span_9_of_9">
-        <h1 class="element"><?php print $title;?></h1> 
-        <img src="Images/<?php print $image;?>">
+        <h1 class="element"><?php print $title;?></h1>
+        
           
     </div>
 </div>
@@ -47,7 +56,7 @@ $conn->close();
 <div class="section group">
     
     <div class="col span_9_of_9">
-        <h2>Cogan's Chicks @ The Chicks for 2022 <br> <br> October 22nd & 23rd 2022</h2>
+        <h2><?php print $title;?> <br> <br> <?php print $eventdate;?></h2>
     </div>
 
 <div class="section group">
@@ -57,11 +66,14 @@ $conn->close();
     </div>
     
     <div class="col span_5_of_9">
-        <p>This year's theme is "Essential Workers" so get your thinking caps on and put your team together for an awesome competition! <br> <br> Tickets are available to purchase either by the registration form below or over the bar at the Marsden Cove Fishing Club <br> Non Members: $70.00 <br> Members: $60.00 <br> Juniors: $40.00 <br> Dinner Tickets: $20.00</p>
+        <?php print $info;?>
     </div>
     
      <div class="col span_2_of_9">
-       <p> </p>
+      <p class="aligncenter">
+        <img src="Images/<?php print $image;?>"></p>
+        <p class="aligncenter">
+        <img src="Images/<?php print $sponsor;?>"></p>
     </div>
 </div>
     
