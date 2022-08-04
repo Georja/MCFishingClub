@@ -1,4 +1,4 @@
-<footer.col>
+<footer.col> 
 <div class="selection group">
 
 <div class="col span_9_of_9">

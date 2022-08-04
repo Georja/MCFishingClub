@@ -31,7 +31,7 @@ $conn->close();
   body {
   background-image: url('Images/whangarei-heads-improv.jpg');
   background-repeat: no-repeat;
-  background-size: 100% 12%;
+  background-size: 100% 10%;
 }
 .aligncenter {
     text-align: center;
