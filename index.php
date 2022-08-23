@@ -8,7 +8,7 @@
   body {
   background-image: url('Images/captured-marlin-large.JPG');
   background-repeat: no-repeat;
-  background-size: 100% 30%;
+  background-size: 100% 25%;
 }
 </style>
 </head>

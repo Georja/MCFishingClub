@@ -45,7 +45,7 @@
      <li><a href=" ">WEIGHMASTERS</a></li>
      <li><a href=" ">SPONSORS</a></li>
      <li><a href=" ">SAFETY</a></li>
-     <li><a href=" ">CONTACT</a></li>
+     <li><a href="contact.php">CONTACT</a></li>
     </ul>
 	</div>
    
