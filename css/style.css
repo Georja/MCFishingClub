@@ -91,6 +91,11 @@ li {
   float: left;
 }
 
+li2 {
+  font-size:20px;
+  float: left;
+}
+
 li a {
   display: block;
   color: white;
@@ -150,6 +155,7 @@ a:link {
   background-color: transparent;
   text-decoration: none;
 }
+
 a:visited {
   color: #000;
   background-color: transparent;
@@ -167,7 +173,35 @@ a:active {
   background-color: transparent;
   text-decoration: underline;
 }
-        
+ 
+a2:link {
+  font-size:20px;
+  color: #DBBD5C;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a2:visited {
+  font-size:20px;
+  color: #DBBD5C;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a2:hover {
+  font-size:20px;
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a2:active {
+  font-size:20px;
+  color: #DBBD5C;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
  p {
     font-size:20px;
     color:white;
