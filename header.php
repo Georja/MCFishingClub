@@ -37,7 +37,7 @@
      <li class="dropdown">
      <a href=" " class="dropbtn">LEADERBOARDS</a>
      <div class="dropdown-content">
-      <a href=" ">ANNUAL LEADERBOARD</a>
+      <a href=" leaderboard.php">ANNUAL LEADERBOARD</a>
       <a href=" ">CATCH AND RELEASE</a>
       <a href=" ">GAME FISH CLUB AND LEADERBOARD</a>
      </div>
