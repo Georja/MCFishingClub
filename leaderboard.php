@@ -52,7 +52,7 @@ body {text-align:center;
 <div class="section group">
     
 	<div class="col span_9_of_9">
-        <h1 class="element">COMMITTEE</h1> 
+        <h1 class="element">ANNUAL LEADERBOARD</h1> 
     
     </div>
 </div>
@@ -60,26 +60,26 @@ body {text-align:center;
 <div class="section group">
     
    <div class="col span_9_of_9">
-        <h2>A Massive Thank You To The 2021/2022 Committee For All Their Hard Work!</h2>
+        <p>Scroll to the bottom for the 2021/2022 results</p>
     </div>
 </div> 
   
 <div class="section group">
     
+   <div class="col span_9_of_9">
+        <h2>2022/2023</h2>
+    </div>
+</div>
+    
+<div class="section group">
+    
    <div class="col span_5_of_9">
 <table class="centre" id="members">
-  <tr>
-    <th>Position</th>
-    <th>Name</th>
-    <th>Phone</th>
-  </tr>
-  
 <?php include('setup.php');
     
     
 $sql = "SELECT title, eventdate FROM `events` WHERE eventdate='2022/2023'";
-$result = $conn->query($sql);
-
+$result = $conn->query($sql);    
 if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
