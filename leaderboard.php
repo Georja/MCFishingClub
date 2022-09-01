@@ -78,16 +78,33 @@ body {text-align:center;
 <?php include('setup.php');
     
     
-$sql = "SELECT title, eventdate FROM `events` WHERE eventdate='2022/2023'";
+$sql = "SELECT id, title, eventdate FROM `events` WHERE eventdate='2021/2022'";
 $result = $conn->query($sql);    
 if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
     echo "<tr> <td>" .$row["title"]."</td><td>". $row["eventdate"]."</td></tr>";
-  }
-} else {
-  echo "0 results";
+      $eventid=$row["id"];
+      $sql = "SELECT * FROM `classes` WHERE eventid='$eventid'";
+      //print "<td>$sql</td></tr>";
+      $result2 = $conn->query($sql);    
+      if ($result2->num_rows > 0) {
+        // output data of each row
+        while($row2 = $result2->fetch_assoc()) {
+        //print_r($row2);
+                                                
+        echo "<tr> <td>" .$row2["species"]."</td><td>". $row2["fisher"]."</td><td>" .$row2["weight"]."</td><td>". $row2["date"]."</td></tr>";
+        }
+      } else {
+        echo "0 results";
+      }
+ echo"<br><br>";
+  } 
 }
+    else {
+        echo "0 results";
+      }
+
 $conn->close();
 ?>       
 </table>

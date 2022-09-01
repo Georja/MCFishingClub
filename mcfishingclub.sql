@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 30, 2022 at 05:17 AM
+-- Generation Time: Sep 01, 2022 at 03:03 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.29
 
@@ -55,7 +55,7 @@ CREATE TABLE `classes` (
   `eventid` int(11) DEFAULT NULL,
   `species` varchar(20) DEFAULT NULL,
   `fisher` varchar(50) DEFAULT NULL,
-  `weight` float DEFAULT NULL,
+  `weight` varchar(20) DEFAULT NULL,
   `date` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -64,7 +64,36 @@ CREATE TABLE `classes` (
 --
 
 INSERT INTO `classes` (`id`, `eventid`, `species`, `fisher`, `weight`, `date`) VALUES
-(1, 5, 'Snapper', 'O Tuck', 10, '15/11/2021');
+(1, 5, 'Snapper', 'O Tuck', '10.06kg', NULL),
+(2, 5, 'Kingfish', 'N Matthews', '21.13kg', NULL),
+(3, 5, 'Kahawai', 'D Dickinson', '2.42kg', NULL),
+(4, 5, 'John Dory', 'H McCullough', '2.12kg', NULL),
+(5, 5, 'Trevally', 'A McCullough', '5.22kg', NULL),
+(6, 5, 'Tarakihi', 'S Moir', '1.61kg', NULL),
+(7, 5, 'Gurnard', 'C Winslow', '1.14kg', NULL),
+(8, 5, 'Crayfish', 'A McCullough', '3.90kg', NULL),
+(9, 6, 'Snapper', 'K Jones', '4.63kg', NULL),
+(10, 6, 'Kingfish', NULL, NULL, NULL),
+(11, 6, 'Kahawai', 'N Adams', '2.17kg', NULL),
+(12, 6, 'John Dory', 'L McCullough', '1.12kg', NULL),
+(13, 6, 'Trevally', 'K McCullough', '2.73kg', NULL),
+(14, 6, 'Tarakihi', NULL, NULL, NULL),
+(15, 6, 'Gurnard', 'L McCullough', '0.54kg', NULL),
+(16, 6, 'Crayfish', NULL, NULL, NULL),
+(17, 7, 'Snapper', 'K Jones', '4.63kg', NULL),
+(18, 7, 'Kingfish', NULL, NULL, NULL),
+(19, 7, 'Kahawai', 'N Adams', '2.17kg', NULL),
+(20, 7, 'John Dory	', 'L McCullough', '1.12kg', NULL),
+(21, 7, 'Trevally', 'K McCullough', '2.73kg', NULL),
+(22, 7, 'Tarakihi', NULL, NULL, NULL),
+(23, 7, 'Gurnard', 'L McCullough', '0.54kg', NULL),
+(24, 8, 'Snapper', 'R Couch', '2.36kg', NULL),
+(25, 8, 'Kingfish', 'R Couch', '13.60kg', NULL),
+(26, 8, 'Kahawai', 'R Couch', '2.38kg', NULL),
+(27, 8, 'Trevally', NULL, NULL, NULL),
+(28, 8, 'John Dory', NULL, NULL, NULL),
+(29, 8, 'Crayfish', NULL, NULL, NULL),
+(30, 8, 'Butterfish', 'R Couch', '1.08kg', NULL);
 
 -- --------------------------------------------------------
 
@@ -92,10 +121,10 @@ INSERT INTO `events` (`id`, `title`, `image`, `sponsor`, `eventdate`, `info`, `f
 (2, 'Metalcraft/Akarana, Marsden Cove Marlin Classic 2023', 'marlin-classic-2023-poster.jpg', 'marlinsponsors.jpeg', ' <p>Briefing- 8th March 2023 6.30pm <br> <br> Fishing Days- 9th, 10th & 11th March 2023</p>', '<p>Should the weather not play the game the postponement dates are: 23th, 24th & 25th March 2023 <br> <br> A huge thank you to all our sponsors who continue to participate, in particular Metalcraft Roofing, Akarana Timbers for being part of the United Industries Group contributing $60k, without this level, prizes would not be the same, so supporting them is crucial. Also, we welcome \"Takacat\" who have sponsored a 3.0m inflatable, so much appreciated. <br> <br> Any new sponsors are all welcome, email<li><a href=\"https://www.facebook.com/paul.mccullough.98892\">Paul McCullough</a></li></p>', '', ''),
 (3, 'HOOK VS SPEAR OPEN TOURNAMENT', '', 'sponsors-for-hookvsspear.jpeg', '', '<p>Unfortunately, there is currently no known information about the tournament for 2022 but we are very hopeful for it to take place next year! <br> <br> If you are a Spear Fisher and would be interested in assisting with this competition in 2023, please get in touch with us as soon as possible.</p>', '', ''),
 (4, '2021 Metalcraft Marlin Classic Results', '', '', '', '<p>2021 definitely turned it on for us that\'s for sure! What an awesome event we had with 2 days of great weather and 1 day with weather that was not ideal, to say the least, but everyone got out there and made the most of what we were dealt with.\r\n\r\nWe had a total of 66 boats and 197 anglers to sell out this yearly competition.\r\n\r\nThank you to everyone involved, especially all our AMAZING Sponsors (listed below), volunteer committee members, bar staff and helpers, it would not have been possible without you all.\r\n\r\nKeep an eye out for competition details on our Facebook pages and website for next year\'s event!\r\n\r\n2021 Competition Tally:\r\n\r\n12x Striped Marlin T&R, 8x  Striped Marlin Landed, 2x Big Eye Tuna, 15x Shark T&R, 18x Kingfish T&R, 16x Kingfish Landed.</p>', '', ''),
-(5, 'Open line fishing\r\n', '', '', '2022/2023', '', '', ''),
-(6, 'JUNIOR LINE FISHING (16 and under)', '', '', '2022/2023', '', '', ''),
-(7, 'Small Fry LINE FISHING (11 and Under)', '', '', '2022/2023', '', '', ''),
-(8, 'OPEN SPEAR FISHING', '', '', '2022/2023', '', '', '');
+(5, 'Open Line Fishing\n', '', '', '2021/2022', '', '', ''),
+(6, 'Junior Line Fishing (16 and under)', '', '', '2021/2022', '', '', ''),
+(7, 'Small Fry Line Fishing (11 and Under)', '', '', '2021/2022', '', '', ''),
+(8, 'Open Spear Fishing', '', '', '2021/2022', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -108,27 +137,26 @@ CREATE TABLE `members` (
   `surname` varchar(50) NOT NULL,
   `firstname` varchar(50) NOT NULL,
   `position` varchar(30) NOT NULL,
-  `ph` varchar(20) NOT NULL,
-  `startdate` date NOT NULL
+  `ph` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `members`
 --
 
-INSERT INTO `members` (`members_id`, `surname`, `firstname`, `position`, `ph`, `startdate`) VALUES
-(1, 'Read', 'Gary', 'President', '0274202002', '2015-02-14'),
-(2, 'Walker', 'David', 'Vice President', '', '2015-01-28'),
-(3, 'Bailey', 'Shirley', 'Secretary', '021744594', '2014-12-04'),
-(4, 'Hedley', 'Liz', 'Treasurer', '', '2016-08-21'),
-(5, 'Adams', 'David', 'Club Captain', '', '2015-04-26'),
-(6, 'Read', 'Rachelle', 'Bar Manager', '0212581177', '2015-02-22'),
-(7, 'Cooper', 'Phil', 'Committee Members', '', '2016-07-03'),
-(8, 'Spinley', 'Aimee', '', '', '2017-06-15'),
-(9, 'McCullough', 'Jackie', '', '', '2017-01-02'),
-(10, 'Dickinson', 'Gaye', '', '', '2017-04-28'),
-(11, 'Furlong', 'Mike', '', '', '2018-09-20'),
-(12, 'Loft', 'Paul', '', '0275369023', '2018-06-01');
+INSERT INTO `members` (`members_id`, `surname`, `firstname`, `position`, `ph`) VALUES
+(1, 'Read', 'Gary', 'President', '0274202002'),
+(2, 'Walker', 'David', 'Vice President', ''),
+(3, 'Bailey', 'Shirley', 'Secretary', '021744594'),
+(4, 'Hedley', 'Liz', 'Treasurer', ''),
+(5, 'Adams', 'David', 'Club Captain', ''),
+(6, 'Read', 'Rachelle', 'Bar Manager', '0212581177'),
+(7, 'Cooper', 'Phil', 'Committee Members', ''),
+(8, 'Spinley', 'Aimee', '', ''),
+(9, 'McCullough', 'Jackie', '', ''),
+(10, 'Dickinson', 'Gaye', '', ''),
+(11, 'Furlong', 'Mike', '', ''),
+(12, 'Loft', 'Paul', '', '0275369023');
 
 --
 -- Indexes for dumped tables
@@ -172,7 +200,7 @@ ALTER TABLE `accounts`
 -- AUTO_INCREMENT for table `classes`
 --
 ALTER TABLE `classes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT for table `events`
