@@ -37,9 +37,7 @@ $conn->close();
 }
 .aligncenter {
     text-align: center;
-}
-
-    
+}   
 </style>
 </head>
 <body>
@@ -51,7 +49,6 @@ $conn->close();
 	<div class="col span_9_of_9">
         <h1 class="element"><?php print $title;?></h1>
         
-          
     </div>
 </div>
     

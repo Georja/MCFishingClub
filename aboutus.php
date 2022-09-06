@@ -1,7 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>About Us-Marsden Cove Fishing Club</title>
+    <?php include('setup.php');
+    
+    //print_r($_GET);
+    $pageID= $_GET["id"];
+
+$sql = "SELECT * FROM `pages`WHERE id =$pageID";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+  // output data of each row
+  while($row = $result->fetch_assoc()) {
+  //echo "<tr> <td>" .$row["title"]."</td><td>". $row["image"]. " " . $row["sponsor"]."</td><td>".  "</td></tr>";
+      $title=$row["title"];
+      $image=$row["image"];
+      $text=$row["text"];
+  }
+} else {
+  echo "0 results";
+}
+$conn->close();
+?> 
+<title><?php print $title;?>-Marsden Cove Fishing Club</title>
 <link rel="stylesheet" href="css/style.css">
    
 <style>
@@ -19,15 +40,14 @@
 <div class="section group">
     
 	<div class="col span_9_of_9">
-        <h1 class="element">ABOUT US</h1> 
-          
+     <h1 class="element"><?php print $title;?></h1>          
     </div>
 </div>
       
 <div class="section group">
     
-    <div class="col span_3_of_9">
-     <img src="images/the-heads-improv.PNG" alt="the-heads" style="width:347px;height:540px;">  
+    <div class="col span_9_of_9">
+        <h2><?php print $image;?> <br> <br> <?php print $text;?></h2>
     </div>
         
     <div class="col span_3_of_9">
