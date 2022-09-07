@@ -40,9 +40,6 @@ img{
     clear:both;   
 }
 
-h3{
-color: white;
-    }
 </style>
 </head>
 <body>
