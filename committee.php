@@ -48,7 +48,9 @@ body {text-align:center;
 <body>
 
    <?php include('header.php');?>
-    
+
+<div class="wrapper">
+
 <div class="section group">
     
 	<div class="col span_9_of_9">
@@ -93,7 +95,10 @@ $conn->close();
 </table>
        
   </div>
-</div>  
+</div> 
+    
+</div>
+    
 <?php include('footer.php');?>
     
 </body>

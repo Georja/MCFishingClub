@@ -9,10 +9,10 @@
      <div class="dropdown-content">
       <a href="committee.php">COMMITTEE</a>
       <a href="pages.php?id=2">OUR CONSTITUTION</a>
-      <a href="pages.php">JUNIOR CLUB</a>
+      <a href="pages.php?id=3">JUNIOR CLUB</a>
      </div>
      </li>
-     <li><a href="pages.php">JOIN US</a></li>
+     <li><a href="pages.php?id=4">JOIN US</a></li>
      <li><a href="gallery.php">GALLERY</a></li>
      <li class="dropdown">
      <a href=" " class="dropbtn">EVENTS</a>
