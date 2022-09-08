@@ -34,11 +34,6 @@ $conn->close();
 img{ 
     width: 100%;
 }
-.wrapper {
-    width: 90%;
-    margin: auto;
-    clear:both;   
-}
 
 </style>
 </head>

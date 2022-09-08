@@ -24,33 +24,13 @@
     </div>
 </div>
 
-<div class="section group">
-    
-    <div class="col span_9_of_9">
-        
-    </div>
-</div>
-
-<div class="section group">
-    
-    <div class="col span_9_of_9">
-       
-    </div>
-</div>
-
-<div class="section group">
-    
-    <div class="col span_9_of_9">
-       
-    </div>
-</div>
-
+    <br> <br>
 <div class="wrapper">
 
 <div class="section group">
     
     <div class="col span_9_of_9">
-        <h2> OPENING HOURS <br> The club room is open on Thursday, Friday and Saturday evenings from 4.30pm. <br> Come along and share a fishing yarn or simply catch up with a bunch of people. <br> Look forward to seeing you there!</h2>
+        <h4> OPENING HOURS <br> The club room is open on Thursday, Friday and Saturday evenings from 4.30pm. <br> Come along and share a fishing yarn or simply catch up with a bunch of people. <br> Look forward to seeing you there!</h4>
     </div>
 	
 </div>
