@@ -4,6 +4,28 @@
 <title>Gallery-Marsden Cove Fishing Club</title>
 <link rel="stylesheet" href="css/style.css">
    
+    <?php include('setup.php');
+    
+    //print_r($_GET);
+    $pageID= $_GET["id"];
+
+$sql = "SELECT * FROM `pages`WHERE id =$pageID";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+  // output data of each row
+  while($row = $result->fetch_assoc()) {
+  //echo "<tr> <td>" .$row["title"]."</td><td>". $row["image"]. " " . $row["sponsor"]."</td><td>".  "</td></tr>";
+      $images=$row["images"];
+     
+  }
+} else {
+  echo "0 results";
+}
+$conn->close();
+?> 
+<title><?php print $title;?>-Marsden Cove Fishing Club</title>
+    
 <style>
   body {
   background-image: url('Images/whangarei-heads-improv.jpg');
@@ -74,69 +96,19 @@ body {
     </div>
 </div>
 
-<!-- Photo Grid -->
+<div class="wrapper">
+      
 <div class="section group">
+        
+    <div class="col span_9_of_9">
+     <img src="Images/<?php print $image;?>">    
+    </div>
     
-	<div class="col span_9_of_9">
-		<div class="row"> 
-  			<div class="column">
-    				<img src="images/the-heads-improv.PNG">
-    				
-  			</div>
-  			<div class="column">
-       				 <img src="images/marlin-weigh-improv.JPG">
-            </div> 
-            <div class="column">
-        			<img src="images/diving.jpg">
-            </div>  
-      		<div class="column">
-       				 <img src="images/bbq.JPG">
-            </div>  
-		</div>
-	</div>
+        
+</div>   
+
 </div>
 
-<div class="section group">
-    
-	<div class="col span_9_of_9">
-		<div class="row"> 
-  			<div class="column">
-    				<img src="images/captured-marlin.JPG">
-    				
-  			</div>
-  			<div class="column">
-       				 <img src="images/marlin.JPG">
-            </div> 
-            <div class="column">
-        			<img src="images/snapper.JPG">
-            </div>  
-      		<div class="column">
-       				 <img src="images/whangarei-heads-full.jpg">
-            </div>  
-		</div>
-	</div>
-</div>
-    
-<div class="section group">
-    
-	<div class="col span_9_of_9">
-		<div class="row"> 
-  			<div class="column">
-    				<img src="images/jackie-yellowfish.jpg">
-    				
-  			</div>
-  			<div class="column">
-       				 <img src="images/guy-with-fish.jpg">
-            </div> 
-            <div class="column">
-        			<img src="images/guy-with-fish2.jpg">
-            </div>  
-      		<div class="column">
-       				 <img src="images/jamie-weigh-fish.jpg">
-            </div>  
-		</div>
-	</div>
-</div>
 <?php include('footer.php');?>
   
 </body>
