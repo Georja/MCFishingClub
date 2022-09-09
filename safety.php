@@ -27,7 +27,7 @@
 <div class="section group">
     
     <div class="col span_9_of_9">
-        <h2>For Information Regarding Up To Date <br> Marine Safety And Weather Warnings Please See The Following</h2>
+        <h4>For Information Regarding Up To Date <br> Marine Safety And Weather Warnings Please See The Following</h4>
     </div>
 </div>
 

@@ -8,7 +8,7 @@
   body {
   background-image: url('Images/whangarei-heads-improv.jpg');
   background-repeat: no-repeat;
-  background-size: 100% 20%;
+  background-size: 100% 10%;
 }
 #table.centre{
     margin-left: auto;
