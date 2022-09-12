@@ -35,6 +35,12 @@ img{
     width: 100%;
 }
 
+li{ 
+    color:white;
+    font-size: 15px;
+    font-family: sans-serif;
+    padding: 20px 16px;
+    }
 </style>
 </head>
 <body>
