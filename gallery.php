@@ -4,26 +4,12 @@
 <title>Gallery-Marsden Cove Fishing Club</title>
 <link rel="stylesheet" href="css/style.css">
    
-    <?php include('setup.php');
+    <?php include('setup.php');?>
+
+
     
-    //print_r($_GET);
-    $pageID= $_GET["id"];
-
-$sql = "SELECT * FROM `pages`WHERE id =$pageID";
-$result = $conn->query($sql);
-
-if ($result->num_rows > 0) {
-  // output data of each row
-  while($row = $result->fetch_assoc()) {
-  //echo "<tr> <td>" .$row["title"]."</td><td>". $row["image"]. " " . $row["sponsor"]."</td><td>".  "</td></tr>";
-      $images=$row["images"];
      
-  }
-} else {
-  echo "0 results";
-}
-$conn->close();
-?> 
+
 <title><?php print $title;?>-Marsden Cove Fishing Club</title>
     
 <style>
@@ -46,8 +32,8 @@ body {
   padding: 32px;
 }
 
+
 .row {
-  display: -ms-flexbox; /* IE10 */
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
@@ -55,7 +41,7 @@ body {
 
 /* Create four equal columns that sits next to each other */
 .column {
-  flex: 24%;
+  flex: 25%;
   max-width: 25%;
   padding: 0 4px;
 }
@@ -69,7 +55,7 @@ body {
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column {
-    flex: 48%;
+    flex: 50%;
     max-width: 50%;
   }
 }
@@ -81,6 +67,11 @@ body {
     max-width: 100%;
   }
 }
+    
+img{ 
+    width: 100%;
+}
+    
 </style>
 </head> 
 <body>
@@ -97,16 +88,40 @@ body {
 </div>
 
 <div class="wrapper">
-      
 <div class="section group">
-        
-    <div class="col span_9_of_9">
-     <img src="Images/<?php print $image;?>">    
-    </div>
-    
-        
-</div>   
+    <?php 
+ $sql = "SELECT * FROM images";
+$result = $conn->query($sql);
 
+if ($result->num_rows > 0) {
+  // output data of each row
+    $rowcount=mysqli_num_rows($result);
+    $r=round($rowcount/4);
+    print$r;
+?>        
+    <div class="col span_9_of_9">
+        <div class="row">
+        <?php while($row = $result->fetch_assoc()) {
+        ?>
+  <div class="column">
+        
+    
+  //echo "<tr> <td>" .$row["title"]."</td><td>". $row["image"]. " " . $row["sponsor"]."</td><td>".  "</td></tr>";
+      $image=$row["name"]; 
+      ?>
+    <img src="images/<?php print $image;?>">    
+
+    <?php   } ?>
+            </div>
+    
+   
+<?php   }
+ else {
+  echo "0 results";
+}
+    
+$conn->close();
+?> </div>
 </div>
 
 <?php include('footer.php');?>

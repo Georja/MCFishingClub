@@ -35,11 +35,11 @@ img{
     width: 100%;
 }
 
-li{ 
+.line li{ 
     color:white;
-    font-size: 15px;
+    font-size: 20px;
     font-family: sans-serif;
-    padding: 20px 16px;
+    padding: 5px 20px;
     }
 </style>
 </head>
@@ -62,7 +62,7 @@ li{
      <img src="Images/<?php print $image;?>">    
     </div>
     
-    <div class="col span_6_of_9">
+    <div class="line col span_6_of_9">
         <p><?php print $text;?></p>
 
     </div>
