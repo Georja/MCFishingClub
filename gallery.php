@@ -101,21 +101,23 @@ if ($result->num_rows > 0) {
 ?>        
     <div class="col span_9_of_9">
         <div class="row">
-        <?php while($row = $result->fetch_assoc()) {
-        ?>
+            <?php
+    for ($c = 0; $c < 4; $c++) {
+   ?>
   <div class="column">
-        
-    
-  //echo "<tr> <td>" .$row["title"]."</td><td>". $row["image"]. " " . $row["sponsor"]."</td><td>".  "</td></tr>";
-      $image=$row["name"]; 
-      ?>
+    <?php 
+    for ($x = 0; $x < 3; $x++) {
+    $row = $result->fetch_assoc();   
+    $image=$row["name"];
+    $alt=$row["alt"];
+    ?>
     <img src="images/<?php print $image;?>">    
 
     <?php   } ?>
             </div>
     
    
-<?php   }
+<?php   }}
  else {
   echo "0 results";
 }

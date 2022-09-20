@@ -12,7 +12,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
-  //echo "<tr> <td>" .$row["title"]."</td><td>". $row["image"]. " " . $row["sponsor"]."</td><td>".  "</td></tr>";
+  //echo "<tr> <td>" .$row["title"]."</td><td>". $row["image"]."</td></tr>";
       $title=$row["title"];
       $image=$row["image"];
       $text=$row["text"];
