@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 11, 2022 at 11:47 PM
+-- Generation Time: Sep 22, 2022 at 02:59 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.29
 
@@ -144,17 +144,18 @@ CREATE TABLE `images` (
 
 INSERT INTO `images` (`id`, `name`, `alt`) VALUES
 (1, 'the-heads-improv.jpg', 'A scenic view of Whangarei Heads from a fishing boat.'),
-(2, 'marlin-weigh-improv.JPG', 'Two men holding beer are standing beside their captured marlin that is being weighed.'),
-(3, 'diving.jpg', 'A woman resting in the water with diving gear on after completing a diving session.'),
-(4, 'bbq.JPG', 'A cook placing pieces of marlin onto a barbeque.'),
+(2, 'snapper.JPG', 'A snapper swimming up close to the camera.'),
+(3, 'bbq.JPG', 'A cook placing pieces of marlin onto a barbeque.'),
+(4, 'jamie-weigh-fish.jpg', 'Jamie standing beside his swordfish as it is getting weighed.'),
 (5, 'captured-marlin.JPG', 'A man lifting a caught marlin out of the water.'),
-(6, 'marlin.JPG', 'A marlin swimming in the water.'),
-(7, 'snapper.JPG', 'A snapper swimming up close to the camera.'),
+(6, 'diving.jpg', 'A woman resting in the water with diving gear on after completing a diving session.'),
+(7, 'guy-with-fish.jpg', 'A man grasping the tail of the giant fish he caught as it is slumped on the floor of his boat.'),
 (8, 'whangarei-heads-full.jpg', 'Image of Whangarei Heads from the side of a fishing boat.'),
 (9, 'jackie-yellowfish.jpg', 'Jackie standing beside her captured Yellowfish Tuna as it is being weighed.'),
-(10, 'guy-with-fish', 'A man grasping the tail of the giant fish he caught as it is slumped on the floor of his boat.'),
-(11, 'guy-with-fish2', 'A man lifting the giant fish he caught.'),
-(12, 'jamie-weigh-fish', 'Jamie standing beside his swordfish as it is getting weighed.');
+(10, 'marlin-weigh-improv.JPG', 'Two men holding beer are standing beside their captured marlin that is being weighed.'),
+(11, 'guy-with-fish2.jpg', 'A man lifting the giant fish he caught.'),
+(12, 'marlin.JPG', 'A marlin swimming in the water.'),
+(13, 'club-championship.jpg', 'Club members awarded with a tropy');
 
 -- --------------------------------------------------------
 
@@ -210,7 +211,7 @@ INSERT INTO `pages` (`id`, `title`, `image`, `text`) VALUES
 (2, 'OUR CONSTITUTION', 'guy-with-fish.jpg', '<p>The Official CONSTITUTION And RULES Of Marsden Cove Fishing Club Incorporated.\r\n\r\n<li><a href=\"https://www.marsdencovefishingclub.co.nz/wp-content/uploads/2021/03/MCFC_Constitution.pdf\" target=\"_self\">Click Here To Read A Copy Of Our Constitution And Club Rules</a></li></p>\r\n\r\n'),
 (3, 'JUNIOR CLUB', 'junior.jpg', '<p>The club proudly runs Fishy Kids Sunday over the summer for its junior members. The kids fish on the jetties in front of the club, competing for the longest fish.</p>\r\n\r\n<p>PRIZES, a lolly scramble, free food and refreshments for the kids.</p>\r\n\r\n<h3>Check Back In Later During The Year For Next Summer\'s Dates And Times.</h3>\r\n\r\n<p>. An adult must attend with their junior(s).</p>\r\n<p>. Bring along your own rods and bait.</p>\r\n<p>. Juniors must sign in with the duty club member before commencing fishing.</p>\r\n<p>. Life jackets are advised for any child that cannot swim.</p> \r\n<p>. Finally, the junior with the longest fish wins.</p>\r\n\r\n<p>Winning juniors will be awarded the trophy for the week and a certificate. Only winning members are able to take the trophies home for the week (non-members must leave the trophy in the clubrooms). That family is then responsible for ensuring the trophy is handed back to either the clubroom or club committee member prior to the next Fishy Kids Sunday.</p>\r\n\r\n<p>Junior members are free and non-members children (12 years and under) are most welcome. Please pay $2.00 when you sign in.</p>'),
 (4, 'JOIN US', 'marlin-weigh-improv.JPG', '<h3>Membership:</h3>\r\n<p>We welcome new members to our friendly club.</p>\r\n<p>Current memberships expire and are up for renewal from 1st August 2022</p>\r\n\r\n<h3>Payment Options:</h3>\r\n<p>Sign up at the Marsden Cove Fishing Club Room (next to Land and Sea Café) - open Thursday, Friday and Saturday from 4.30 pm.</p>\r\n\r\n<p>Complete the membership form and pay by internet banking or Marsden Cove Fishing Club Room (open Thursday, Friday and Saturday from 4.30 pm). Bring your completed membership form with you if paying at the club.</p>\r\n\r\n<h3>Membership Application Form.</h3>\r\n<p><li><a href=https://www.marsdencovefishingclub.co.nz/membership-application/>Membership Form</a></li></p>'),
-(5, 'SAFETY', 'jackie-yellowfish.jpg', '<p>. Coastguard VHF Channel 83</p>\r\n<p>. Coastguard Nowcasting BOI 21 Leigh 22</p>\r\n<p>. MetVUW <li><a href=\"https://metvuw.com/\">metvuw.com</li></p>\r\n<p>. MetService <li><a href=\"https://www.metservice.com/\">metservice</li></p>\r\n<p>. NIWA <li><a href=\"https://niwa.co.nz/\">niwa</li></p>\r\n<p>. NOAA <li><a href=\"https://www.tsunami.gov/\">noaa</li></p>\r\n<p>. Civil Defence <li><a href=\"https://www.civildefence.govt.nz/\">civildefence</li></p>\r\n<br><br>\r\n<p>This information is also available at Marsden Cove Fishing Club on Facebook under the \"about\" tab under the Marsden Cove Fishing Club logo.</p>');
+(5, 'SAFETY', 'jackie-yellowfish.jpg', '<li>Coastguard VHF Channel 83</li>\r\n<li>Coastguard Nowcasting BOI 21 Leigh 22</li>\r\n<li>MetVUW<a href=\"https://metvuw.com/\"> metvuw.com</a></li>\r\n<li>MetService<a href=\"https://www.metservice.com/\">metservice.com</a></li>\r\n<li>NIWA<a href=\"https://niwa.co.nz/\">niwa.co.nz</a></li>\r\n<li>NOAA<a href=\"https://www.tsunami.gov/\">tsunami.gov</a></li>\r\n<li>Civil Defence<a href=\"https://www.civildefence.govt.nz/\">civildefence.govt.nz</a></li>\r\n<br>\r\n<p>This information is also available at Marsden Cove Fishing Club on Facebook under the \"about\" tab under the Marsden Cove Fishing Club logo.</p>');
 
 --
 -- Indexes for dumped tables
@@ -278,7 +279,7 @@ ALTER TABLE `events`
 -- AUTO_INCREMENT for table `images`
 --
 ALTER TABLE `images`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `members`

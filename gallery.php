@@ -97,7 +97,7 @@ if ($result->num_rows > 0) {
   // output data of each row
     $rowcount=mysqli_num_rows($result);
     $r=round($rowcount/4);
-    print$r;
+    print$rowcount;
 ?>        
     <div class="col span_9_of_9">
         <div class="row">
