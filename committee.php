@@ -67,7 +67,8 @@ body {text-align:center;
 </div> 
   
 <div class="section group">
-    
+       <div class="col span_2_of_9">
+    </div>
    <div class="col span_5_of_9">
 <table class="centre" id="members">
   <tr>

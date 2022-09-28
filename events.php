@@ -100,35 +100,6 @@ $conn->close();
     </div>
 </div>
     
-<div class="section group">
-
-    <div class="col span_9_of_9">
-     <h2>8th - 10th April 2021</h2> 
-    </div>   
-</div> 
-    
-<div class="section group">
-    
-     <div class="col span_2_of_9">
-        <p> </p>
-    </div>
-    
-    <div class="col span_5_of_9">
-        <p>WOW! What an amazing event! <br> <br> Thank you to all the amazing ladies who entered and the amazing skippers who kept everyone safe and on the spots!</p>
-    </div>
-    
-     <div class="col span_2_of_9">
-       <p> </p>
-    </div>
-</div>
-    
-<div class="section group">
-
-    <div class="col span_9_of_9">
-     <h2>Here Are The Results!</h2> 
-    </div>   
-</div>
-    
 </div>
 
     <?php include('footer.php');?>

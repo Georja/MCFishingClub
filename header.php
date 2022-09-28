@@ -9,7 +9,7 @@
      <div class="dropdown-content">
       <a href="committee.php">COMMITTEE</a>
       <a href="pages.php?id=2">OUR CONSTITUTION</a>
-      <a href="pages.php?id=3">JUNIOR CLUB</a>
+      <a href="junior.php">JUNIOR CLUB</a>
      </div>
      </li>
      <li><a href="pages.php?id=4">JOIN US</a></li>

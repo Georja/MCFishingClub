@@ -38,14 +38,14 @@
 <div class="section group">
     
     <div class="col span_3_of_9">
-     <img src="images/the-heads-improv.PNG" alt="the-heads" style="width:347px;height:540px;">  
+     <img src="images/the-heads-improv.jpg" alt="the-heads" style="width:347px;height:540px;">  
     </div>
     
     <div class="col span_3_of_9">
         <h2>WELCOME</h2>
         
     <div class="col span_9_of_9">
-        <p>Marsden Cove Fishing Club was formed in July 2009 as the result of a few locals meeting at the local Bait & Tackle Shop to yarn about their recent heaviest and largest fish caught and, of course, long discussions regarding the “one that got away”. <br> <br> Situated next door to the Land and Sea Cafe and Bar in the beautiful Marsden Cove Marina, Marsden Point. The club's bar looks over some spectacular views across the marina.<br> <br> The club also hosts events throughout the year for members and their friends and family, including the annual Pink Ribbon Afternoon tea. Become a member and receive emails on upcoming events and other important notifications.<br> <br> From the beginning, the club has enjoyed a mix of men, women and children and proudly promotes itself as a family fishing club. Our objectives are to foster fishing and other aquatic activities for members and families, and to encourage all to have a go at fishing in a sustainable way. The club incorporated Marsden Cove Spearfishing into its ranks in 2011 and has a strong spearfishing following, who give the linefishermen a run for their money.<br> <br> <li><a href="pages.php?id=1">Learn More</a></li></p>
+        <p>Marsden Cove Fishing Club was formed in July 2009 as the result of a few locals meeting at the local Bait & Tackle Shop to yarn about their recent heaviest and largest fish caught and, of course, long discussions regarding the “one that got away”. <br> <br> Situated next door to the Land and Sea Cafe and Bar in the beautiful Marsden Cove Marina, Marsden Point. The club's bar looks over some spectacular views across the marina.<br> <br> The club also hosts events throughout the year for members and their friends and family, including the annual Pink Ribbon Afternoon tea. Become a member and receive emails on upcoming events and other important notifications.<br> <br> From the beginning, the club has enjoyed a mix of men, women and children and proudly promotes itself as a family fishing club. Our objectives are to foster fishing and other aquatic activities for members and families, and to encourage all to have a go at fishing in a sustainable way. The club incorporated Marsden Cove Spearfishing into its ranks in 2011 and has a strong spearfishing following, who give the linefishermen a run for their money.<br><li><a href="pages.php?id=1">Learn More</a></li></p>
     </div>
         
     </div>

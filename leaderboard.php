@@ -58,9 +58,10 @@ body {text-align:center;
 </div>
     
 <div class="section group">
-    
-   <div class="col span_9_of_9">
-        <p>Scroll to the bottom for the 2021/2022 results</p>
+    <div class="col span_2_of_9">
+    </div>
+   <div class="col span_5_of_9">
+        <h4>Scroll to the bottom for the 2021/2022 results</h4>
     </div>
 </div> 
   
@@ -72,7 +73,8 @@ body {text-align:center;
 </div>
     
 <div class="section group">
-    
+       <div class="col span_2_of_9">
+    </div>
    <div class="col span_5_of_9">
 <table class="centre" id="members">
 <?php include('setup.php');
@@ -98,7 +100,7 @@ if ($result->num_rows > 0) {
       } else {
         echo "0 results";
       }
- echo"<br><br>";
+ //echo"<br><br>";
   } 
 }
     else {
