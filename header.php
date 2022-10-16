@@ -9,7 +9,7 @@
      <div class="dropdown-content">
       <a href="committee.php">COMMITTEE</a>
       <a href="pages.php?id=2">OUR CONSTITUTION</a>
-      <a href="junior.php">JUNIOR CLUB</a>
+      <a href="pages.php?id=3">JUNIOR CLUB</a>
      </div>
      </li>
      <li><a href="pages.php?id=4">JOIN US</a></li>
@@ -35,7 +35,7 @@
 	<div class="col span_4_of_9">
     <ul>
      <li class="dropdown">
-     <a href=" " class="dropbtn">LEADERBOARDS</a>
+     <a href="pages.php?id=6" class="dropbtn">LEADERBOARDS</a>
      <div class="dropdown-content">
       <a href=" leaderboard.php">ANNUAL LEADERBOARD</a>
       <a href=" ">CATCH AND RELEASE</a>
