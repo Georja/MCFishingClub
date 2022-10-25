@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 25, 2022 at 04:13 AM
+-- Generation Time: Oct 25, 2022 at 10:07 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.29
 
@@ -199,15 +199,21 @@ CREATE TABLE `membership` (
   `id` int(11) NOT NULL,
   `fname` varchar(100) NOT NULL,
   `lname` varchar(100) NOT NULL,
-  `email` varchar(100) NOT NULL
+  `add1` varchar(100) NOT NULL,
+  `add2` varchar(100) NOT NULL,
+  `city` varchar(100) NOT NULL,
+  `pcode` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `mphone` varchar(100) NOT NULL,
+  `phone` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `membership`
 --
 
-INSERT INTO `membership` (`id`, `fname`, `lname`, `email`) VALUES
-(1, 'G', 'Loft ', '');
+INSERT INTO `membership` (`id`, `fname`, `lname`, `add1`, `add2`, `city`, `pcode`, `email`, `mphone`, `phone`) VALUES
+(1, 'G', 'Loft ', '', '', '', '', '', '', '');
 
 -- --------------------------------------------------------
 

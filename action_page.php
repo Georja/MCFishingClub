@@ -8,17 +8,18 @@
 
 $firstname = $_POST["firstname"];
 $lastname = $_POST["lastname"];
-$email = $_POST["email"];
-$address = $_POST["address"];
-$postcode = $_POST["postcode"];
-$mobilephone = $_POST["mobilephone"];
+$addressline1 = $_POST["addressline1"];
+$addressline2 = $_POST["addressline2"];
 $city = $_POST["city"];
+$postcode = $_POST["postcode"];
+$email = $_POST["email"];
+$mobilephone = $_POST["mobilephone"];
 $phone = $_POST["phone"];
 
 //Now use them in the insert statement - change myguest to our table contacts, add subject field in and rename the examples with our prepared variables 
 
-$sql = "INSERT INTO membership (fname, lname, email)
-VALUES ('$firstname', '$lastname ', '$email')";
+$sql = "INSERT INTO membership (fname, lname, add1, add2, city, pcode, email, mphone, phone)
+VALUES ('$firstname', '$lastname', '$addressline1', '$addressline2', '$city', '$postcode', '$email', '$mobilephone', '$phone')";
 
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";

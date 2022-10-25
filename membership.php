@@ -144,35 +144,51 @@ input[type=submit]:hover {
     </div>
     
 <div class="container">
- <div class="row">
-    <div class="col-25">
-      <label for="address">Address</label>
+<div class="cell:first-of-type">
+      <div class="col-50">
+      <label for="add1">Address Line 1</label>
     </div>
-    <div class="col-75">
-      <input type="text" id="address" name="address" placeholder="Your address..">
+    
+      <div class="col-50">
+      <label for="add2">Address Line 2</label>
+    </div>
 
-    </div>
-  </div>
-</div>
-
-<div class="container">
-  <div class="cell:first-of-type">
-    <div class="col-25">
-      <label for="fname">City</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="city" name="city" placeholder="Your city..">
-    </div>
   </div>
   <div class="cell:last-of-cell">
-    <div class="col-25">
-      <label for="lname">Post Code</label>
+      <div class="col-l45">
+      <input type="text" id="add1" name="addressline1" placeholder="Your address..">
     </div>
-    <div class="col-75">
+      <div class="col-5">
+    </div>
+      <div class="col-l45">
+      <input type="text" id="add2" name="addressline2" placeholder="Other address..">
+    </div>
+  </div>
+    </div>
+
+<div class="container">
+<div class="cell:first-of-type">
+      <div class="col-50">
+      <label for="city">City</label>
+    </div>
+    
+      <div class="col-50">
+      <label for="pcode">Post Code</label>
+    </div>
+
+  </div>
+  <div class="cell:last-of-cell">
+      <div class="col-l45">
+      <input type="text" id="city" name="city" placeholder="Your city..">
+    </div>
+      <div class="col-5">
+    </div>
+      <div class="col-l45">
       <input type="text" id="pcode" name="postcode" placeholder="Your post code..">
     </div>
   </div>
     </div>
+      
     
 <div class="container">
  <div class="row">
@@ -192,7 +208,7 @@ input[type=submit]:hover {
       <label for="mobilephone">Mobile Phone</label>
     </div>
     <div class="col-75">
-      <input type="text" id="mphone" name="mobilephone" placeholder="Your Mobile..">
+      <input type="text" id="mphone" name="mobilephone" placeholder="Your mobile..">
 
     </div>
   </div>
