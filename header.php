@@ -43,7 +43,7 @@
      </div>
      </li>
      <li><a href=" ">WEIGHMASTERS</a></li>
-     <li><a href=" ">SPONSORS</a></li>
+     <li><a href="sponsors.php">SPONSORS</a></li>
      <li><a href="pages.php?id=5">SAFETY</a></li>
      <li><a href="contact.php">CONTACT</a></li>
     </ul>

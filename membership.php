@@ -67,6 +67,24 @@ input[type=submit]:hover {
   width: 25%;
   margin-top: 6px;
 }
+    
+.col-50 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+}
+    
+.col-l45 {
+  float: left;
+  width: 45%;
+  margin-top: 6px;
+}
+    
+.col-5 {
+  float: left;
+  width: 5%;
+  margin-top: 6px;
+}
 
 .col-75 {
   float: left;
@@ -100,29 +118,32 @@ input[type=submit]:hover {
 
 <h2>Membership Form</h2>
 
-<div class="container">
   <form action="action_page.php" method="post">
+  <div class="container">
+
   <div class="cell:first-of-type">
-    <div class="col-25">
+      <div class="col-50">
       <label for="fname">First Name</label>
     </div>
-    <div class="col-75">
-      <input type="text" id="fname" name="firstname" placeholder="Your name..">
-    </div>
-  </div>
-  <div class="cell:last-of-cell">
-    <div class="col-25">
+    
+      <div class="col-50">
       <label for="lname">Last Name</label>
     </div>
-    <div class="col-75">
+
+  </div>
+  <div class="cell:last-of-cell">
+      <div class="col-l45">
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    </div>
+      <div class="col-5">
+    </div>
+      <div class="col-l45">
       <input type="text" id="lname" name="lastname" placeholder="Your last name..">
     </div>
   </div>
-    </form>
     </div>
     
 <div class="container">
-  <form action="action_page.php" method="post">      
  <div class="row">
     <div class="col-25">
       <label for="address">Address</label>
@@ -132,11 +153,9 @@ input[type=submit]:hover {
 
     </div>
   </div>
-    </form>
 </div>
 
 <div class="container">
-  <form action="action_page.php" method="post">
   <div class="cell:first-of-type">
     <div class="col-25">
       <label for="fname">City</label>
@@ -153,11 +172,9 @@ input[type=submit]:hover {
       <input type="text" id="pcode" name="postcode" placeholder="Your post code..">
     </div>
   </div>
-    </form>
     </div>
     
 <div class="container">
-  <form action="action_page.php" method="post">      
  <div class="row">
     <div class="col-25">
       <label for="email">Email</label>
@@ -167,11 +184,9 @@ input[type=submit]:hover {
 
     </div>
   </div>
-    </form>
 </div>
     
 <div class="container">
-  <form action="action_page.php" method="post">      
  <div class="row">
     <div class="col-25">
       <label for="mobilephone">Mobile Phone</label>
@@ -181,11 +196,9 @@ input[type=submit]:hover {
 
     </div>
   </div>
-    </form>
 </div>
     
 <div class="container">
-  <form action="action_page.php" method="post">      
  <div class="row">
     <div class="col-25">
       <label for="phone">Phone</label>
@@ -195,7 +208,6 @@ input[type=submit]:hover {
 
     </div>
   </div>
-    </form>
 </div>
   
   <br>
@@ -203,7 +215,8 @@ input[type=submit]:hover {
   <div class="row">
     <input type="submit" value="Submit">
   </div>
-  
+      </form>
+
 </div>
     </div>
     

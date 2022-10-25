@@ -1,20 +1,24 @@
-<?php print_r($_POST);?>
-
-<?php include('header.php');?>
+<?php print_r($_POST);
+ include('setup.php');
 
 // get the variables from the $_POST array - the contents displayed here
 
 //Array ( [firstname] => Georja [lastname] => Loft [email] => georja@mail.com [subject] => Hi )
+//Array ( [firstname] => G [lastname] => Loft [address] => whangarei [city] => [postcode] => [email] => [mobilephone] => [phone] => )
 
 $firstname = $_POST["firstname"];
 $lastname = $_POST["lastname"];
-$email = $_POST["email”];
-$subject = $_POST[“subject"];
+$email = $_POST["email"];
+$address = $_POST["address"];
+$postcode = $_POST["postcode"];
+$mobilephone = $_POST["mobilephone"];
+$city = $_POST["city"];
+$phone = $_POST["phone"];
 
 //Now use them in the insert statement - change myguest to our table contacts, add subject field in and rename the examples with our prepared variables 
 
-$sql = "INSERT INTO contacts (firstname, lastname, email, subject)
-VALUES ('$firstname', '$lastname ', '$email’, ‘$subject')";
+$sql = "INSERT INTO membership (fname, lname, email)
+VALUES ('$firstname', '$lastname ', '$email')";
 
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";
@@ -23,3 +27,4 @@ if ($conn->query($sql) === TRUE) {
 }
 
 $conn->close();
+?>
