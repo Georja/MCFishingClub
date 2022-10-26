@@ -1,13 +1,36 @@
 <?php print_r($_POST);
  include('setup.php');
-
+ if (empty($_POST["name"])) {
+    $nameErr = "Name is required";
+  } else {
+    $name = test_input($_POST["name"]);
+    // check if name only contains letters and whitespace
+    if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
+      $nameErr = "Only letters and white space allowed";
+    }
+  }
+  
+  if (empty($_POST["email"])) {
+    $emailErr = "Email is required";
+  } else {
+    $email = test_input($_POST["email"]);
+    // check if e-mail address is well-formed
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+      $emailErr = "Invalid email format";
+    }
+ function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
 // get the variables from the $_POST array - the contents displayed here
 
 //Array ( [firstname] => Georja [lastname] => Loft [email] => georja@mail.com [subject] => Hi )
 //Array ( [firstname] => G [lastname] => Loft [address] => whangarei [city] => [postcode] => [email] => [mobilephone] => [phone] => )
 
-$firstname = $_POST["firstname"];
-$lastname = $_POST["lastname"];
+$firstname = test_input($_POST["firstname"]);
+$lastname = test_input($_POST["lastname"]);
 $addressline1 = $_POST["addressline1"];
 $addressline2 = $_POST["addressline2"];
 $city = $_POST["city"];

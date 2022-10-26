@@ -14,7 +14,7 @@
   box-sizing: border-box;
 }
 
-input[type=text], select, textarea {
+input[type=text], select, textarea, input[type=email], input[type=number] {
   width: 100%;
   padding: 12px;
   border: 1px solid #000;
@@ -105,6 +105,63 @@ input[type=submit]:hover {
 	.span_1_of_9, .span_2_of_9, .span_3_of_9, .span_4_of_9, .span_5_of_9, .span_6_of_9, .span_7_of_9, .span_8_of_9, .span_9_of_9 { width: 100%; }
 }
 </style>
+<?php print_r($_POST);
+ include('setup.php');
+ if (empty($_POST["fname"])) {
+    $fnameErr = "Name is required";
+  } else {
+    $fname = test_input($_POST["fname"]);
+    // check if name only contains letters and whitespace
+    if (!preg_match("/^[a-zA-Z-' ]*$/",$fname)) {
+      $fnameErr = "Only letters and white space allowed";
+    }
+  }
+  
+  if (empty($_POST["email"])) {
+    $emailErr = "Email is required";
+  } else {
+    $email = test_input($_POST["email"]);
+    // check if e-mail address is well-formed
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+      $emailErr = "Invalid email format";
+    }
+   
+
+// get the variables from the $_POST array - the contents displayed here
+
+//Array ( [firstname] => Georja [lastname] => Loft [email] => georja@mail.com [subject] => Hi )
+//Array ( [firstname] => G [lastname] => Loft [address] => whangarei [city] => [postcode] => [email] => [mobilephone] => [phone] => )
+
+$firstname = test_input($_POST["firstname"]);
+$lastname = test_input($_POST["lastname"]);
+$addressline1 = $_POST["addressline1"];
+$addressline2 = $_POST["addressline2"];
+$city = $_POST["city"];
+$postcode = $_POST["postcode"];
+$email = $_POST["email"];
+$mobilephone = $_POST["mobilephone"];
+$phone = $_POST["phone"];
+
+//Now use them in the insert statement - change myguest to our table contacts, add subject field in and rename the examples with our prepared variables 
+
+$sql = "INSERT INTO membership (fname, lname, add1, add2, city, pcode, email, mphone, phone)
+VALUES ('$firstname', '$lastname', '$addressline1', '$addressline2', '$city', '$postcode', '$email', '$mobilephone', '$phone')";
+
+if ($conn->query($sql) === TRUE) {
+  echo "New record created successfully";
+} else {
+  echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
+?>
+        
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
 </head>
 <body>
     <?php include('header.php');?>
@@ -118,10 +175,11 @@ input[type=submit]:hover {
 
 <h2>Membership Form</h2>
 
-  <form action="action_page.php" method="post">
+  <form action="membership.php" method="post">
   <div class="container">
 
   <div class="cell:first-of-type">
+      <span class="error">* required field</span>
       <div class="col-50">
       <label for="fname">First Name</label>
     </div>
@@ -134,6 +192,7 @@ input[type=submit]:hover {
   <div class="cell:last-of-cell">
       <div class="col-l45">
       <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <span class="error">* <?php echo $fnameErr;?></span>
     </div>
       <div class="col-5">
     </div>
@@ -184,7 +243,7 @@ input[type=submit]:hover {
       <div class="col-5">
     </div>
       <div class="col-l45">
-      <input type="text" id="pcode" name="postcode" placeholder="Your post code..">
+      <input type="number" id="pcode" name="postcode" placeholder="Your post code..">
     </div>
   </div>
     </div>
@@ -196,7 +255,7 @@ input[type=submit]:hover {
       <label for="email">Email</label>
     </div>
     <div class="col-75">
-      <input type="text" id="email" name="email" placeholder="Your email..">
+      <input type="email" id="email" name="email" placeholder="Your email..">
 
     </div>
   </div>
